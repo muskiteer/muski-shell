@@ -1,0 +1,4 @@
+.vscode
+# Ignore all compiled binaries
+build
+terminal
