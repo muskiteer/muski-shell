@@ -87,14 +87,15 @@ int main(){
         }
 
         int pid = fork();
+
         if (pid <0){
             perror("Fork failed\n");
             continue;
         }
         if (pid == 0){
-            if (
-                execv(path, myargs) < 0) {
+            if (execv(path, myargs) < 0) {
                 fprintf(stderr, "Command not found: %s\n", myargs[0]);
+                printf("hello");
             }
             exit(EXIT_FAILURE);
         }
