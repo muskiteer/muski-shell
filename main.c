@@ -80,6 +80,7 @@ int main(){
         
         char path[256];
         snprintf(path, sizeof(path), "./build/%s", myargs[0]);
+        // snprintf(path, sizeof(path), "/usr/bin/%s", myargs[0]);
 
         if (strcmp(myargs[0],"cd")==0){
             command_cd(i, myargs);
